@@ -1,0 +1,32 @@
+Ais\PrestasiBundle\Entity\Prestasi:
+ type: entity
+ table: prestasi
+ id:
+  id: 
+   type: integer
+   generator: { strategy: AUTO }
+ fields:
+  mahasiswa_id:
+   type: integer
+  semester_id:
+   type: integer
+  e_sks_lulus:
+   type: integer
+  e_sks_diambil:
+   type: integer
+  e_sks_lulus_x_na:
+   type: integer
+  e_sks_diambil_x_na:
+   type: integer
+  ipk:
+   type: decimal
+  ips:
+   type: decimal
+  ipsk:
+   type: decimal
+  is_active:
+   type: boolean
+   nullable: true
+  is_delete:
+   type: boolean
+   nullable: true

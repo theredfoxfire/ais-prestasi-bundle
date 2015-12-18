@@ -1,6 +1,7 @@
 Ais\PrestasiBundle\Entity\Prestasi:
  type: entity
  table: prestasi
+ repositoryClass: Ais\PrestasiBundle\Repository\PrestasiRepository
  id:
   id: 
    type: integer

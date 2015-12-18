@@ -345,4 +345,3 @@ class Prestasi implements PrestasiInterface
         return $this->is_delete;
     }
 }
-

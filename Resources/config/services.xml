@@ -16,6 +16,15 @@
             <argument>%ais_prestasi.prestasi.class%</argument>
             <argument type="service" id="form.factory"></argument>
         </service>
+        <service id="ais_prestasi.prestasi.manager" class="Doctrine\ORM\EntityManager" factory-service="doctrine" factory-method="getManagerForClass">
+			<argument>%ais_prestasi.prestasi.class%</argument>
+		</service>
+        
+        <service id="ais_prestasi.prestasi.repository" 
+			class="Ais\PrestasiBundle\Repository\PrestasiRepository"
+			factory-service="ais_prestasi.prestasi.manager" factory-method="getRepository">
+				<argument>%ais_prestasi.prestasi.class%</argument>
+		</service>
     </services>
 
 </container>

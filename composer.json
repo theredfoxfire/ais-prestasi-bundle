@@ -1,5 +1,5 @@
 {
-    "name" : "Ais/PrestasiBundle",
+    "name" : "ais/prestasibundle",
     "description" : "A bundle filled with Prestasi",
     "type" : "symfony-bundle",
     "authors" : [{
